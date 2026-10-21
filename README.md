@@ -1,6 +1,6 @@
-# Raju & Aishu - Digital Wedding Invitation
+# ARJUN & MEERA - Digital Wedding Invitation
 
-A premium, elegant, and interactive digital wedding invitation built for **Raju and Aishu**.
+A premium, elegant, and interactive digital wedding invitation built for **Arjun and Meera**.
 
 ## Features
 

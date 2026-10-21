@@ -1,5 +1,5 @@
 /**
- * RAJU & AISHU - Wedding Invitation Main Script
+ * ARJUN & MEERA - Wedding Invitation Main Script
  */
 
 document.addEventListener('DOMContentLoaded', () => {

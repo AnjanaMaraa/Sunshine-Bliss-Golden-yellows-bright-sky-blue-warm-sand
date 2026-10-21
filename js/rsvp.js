@@ -1,5 +1,5 @@
 /**
- * RAJU & AISHU - RSVP Form Handling
+ * ARJUN & MEERA - RSVP Form Handling
  */
 
 function initRSVP() {

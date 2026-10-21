@@ -1,5 +1,5 @@
 /**
- * RAJU & AISHU - Countdown Timer
+ * ARJUN & MEERA - Countdown Timer
  */
 
 function initCountdown() {

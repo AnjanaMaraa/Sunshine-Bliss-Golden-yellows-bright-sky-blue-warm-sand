@@ -1,14 +1,14 @@
 /**
- * RAJU & AISHU - Wedding Invitation Configuration
+ * ARJUN & MEERA - Wedding Invitation Configuration
  * Centralized data source for the digital invitation.
  */
 
 const invitationData = {
   couple: {
-    groom: "Raju",
-    bride: "Aishu",
-    groomShort: "Raju",
-    brideShort: "Aishu"
+    groom: "Arjun",
+    bride: "Meera",
+    groomShort: "Arjun",
+    brideShort: "Meera"
   },
 
   wedding: {
@@ -31,7 +31,7 @@ const invitationData = {
 
   hero: {
     image: "assets/images/mandap-bg.jpg",
-    title: "Raju & Aishu",
+    title: "Arjun & Meera",
     subtitle: "Two hearts, one beautiful journey. Join us as we celebrate our special day.",
     cta: "Discover Our Invitation"
   },
@@ -40,7 +40,7 @@ const invitationData = {
     enabled: true,
     title: "Tap to Open",
     cardTitle: "Wedding Invitation",
-    cardSubtitle: "Raju & Aishu",
+    cardSubtitle: "Arjun & Meera",
     cardDate: "16.08.2024"
   },
 

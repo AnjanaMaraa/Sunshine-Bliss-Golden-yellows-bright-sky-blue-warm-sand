@@ -1,5 +1,5 @@
 /**
- * RAJU & AISHU - Entrance Curtain Animation
+ * ARJUN & MEERA - Entrance Curtain Animation
  */
 
 function initEntrance() {
