@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- SEO Metadata -->
+    <title>Raju & Aishu | Wedding Invitation</title>
+    <meta name="description" content="Join Raju and Aishu as they celebrate their special day. Explore their digital wedding invitation and share your wishes.">
+    <meta name="author" content="Digimaraa Technologies">
+    <meta name="theme-color" content="#06aed5">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Raju & Aishu | Wedding Invitation">
+    <meta property="og:description" content="Join Raju and Aishu as they celebrate their special day.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="is-locked">
+
+    <!-- Entrance Curtain -->
+    <div id="entrance-overlay" class="entrance-overlay">
+        <div class="curtain-panel curtain-left"></div>
+        <div class="curtain-panel curtain-right"></div>
+        <div class="entrance-content">
+            <div class="invitation-tag">
+                <div class="tag-ribbon"></div>
+                <div class="tag-card">
+                    <h2 id="entrance-tag-title">Wedding Invitation</h2>
+                    <div class="tag-names" id="entrance-tag-names">Raju & Aishu</div>
+                    <div class="tag-date" id="entrance-tag-date">16.08.2024</div>
+                </div>
+            </div>
+            <button id="entrance-cta" class="tap-to-open">
+                <span class="pulse-ring"></span>
+                <span id="entrance-cta-text">Tap to Open</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <!-- REPLACE HERO IMAGE HERE -->
+                <img id="hero-image" src="assets/images/mandap-bg.jpg" alt="Raju & Aishu">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-names-container">
+                    <h1 class="hero-names" id="hero-names">Raju & Aishu</h1>
+                </div>
+                <p class="hero-subtitle" id="hero-subtitle">Two hearts, one beautiful journey. Join us as we celebrate our special day.</p>
+                <div class="hero-date" id="hero-display-date">16 August 2024</div>
+                <a href="#scratch-section" class="btn btn-primary" id="hero-cta">Discover Our Invitation</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- Scratch to Reveal Section -->
+        <section id="scratch-section" class="scratch-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 id="scratch-heading">Scratch to Reveal</h2>
+                    <p id="scratch-subheading">You're Invited!</p>
+                </div>
+                <div class="scratch-card-container" id="scratch-card">
+                    <div id="scratch-revealed-content" class="scratch-revealed-content">
+                        <div class="revealed-inner">
+                            <h3 id="revealed-names">Raju & Aishu</h3>
+                            <div class="revealed-date" id="revealed-date">16 August 2024</div>
+                            <div class="revealed-day" id="revealed-weekday">Friday</div>
+                            <div class="revealed-time" id="revealed-time"></div>
+                        </div>
+                    </div>
+                    <canvas id="scratch-canvas"></canvas>
+                    <span class="scratch__burst" id="scratch-burst" aria-hidden="true"></span>
+                </div>
+                <div class="scratch-fallback text-center">
+                    <button id="scratch-reveal" class="btn btn-outline">Reveal Invitation</button>
+                </div>
+                <p class="sr-only" role="status" id="scratch-status"></p>
+            </div>
+        </section>
+
+        <!-- Invitation Intro -->
+        <section id="intro" class="intro-section section-padding">
+            <div class="container text-center">
+                <div class="intro-ornament top"></div>
+                <p class="intro-together">Together with our families</p>
+                <h2 class="intro-names">Raju & Aishu</h2>
+                <p class="intro-message">We joyfully invite you to celebrate our wedding and share in the beginning of our new journey together.</p>
+                <div class="intro-date">16 August 2024</div>
+                <div class="intro-ornament bottom"></div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown-section" class="countdown-section section-padding">
+            <div class="container text-center">
+                <h2 class="section-title" id="countdown-title">Counting Down to Forever</h2>
+                <div id="countdown-timer" class="countdown-timer">
+                    <div class="countdown-item">
+                        <span id="days" class="number">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours" class="number">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes" class="number">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds" class="number">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+                <div id="countdown-past-message" class="countdown-past-message hidden">
+                    Celebrating the Memories
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline-section" class="timeline-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Our Wedding Celebration</h2>
+                <div id="timeline-container" class="timeline-container">
+                    <!-- Dynamic Timeline Content -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue Section (Hidden by default) -->
+        <section id="venue-section" class="venue-section section-padding hidden">
+            <div class="container">
+                <h2 class="section-title text-center">Wedding Venue</h2>
+                <div class="venue-card">
+                    <div class="venue-image-container hidden" id="venue-image-container">
+                        <img id="venue-image" src="" alt="Venue">
+                    </div>
+                    <div class="venue-info text-center">
+                        <h3 id="venue-name"></h3>
+                        <p id="venue-address"></p>
+                        <a href="" id="venue-map-link" target="_blank" class="btn btn-primary">View on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dress Code Section (Hidden by default) -->
+        <section id="dress-code-section" class="dress-code-section section-padding hidden">
+            <div class="container">
+                <h2 class="section-title text-center">Dress Code</h2>
+                <div id="dress-code-container" class="dress-code-grid">
+                    <!-- Dynamic Dress Code Cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pre-Wedding Events (Hidden by default) -->
+        <section id="pre-wedding-section" class="pre-wedding-section section-padding hidden">
+            <div class="container">
+                <h2 class="section-title text-center">Pre-Wedding Celebrations</h2>
+                <div id="pre-wedding-container" class="events-grid">
+                    <!-- Dynamic Event Cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Transportation (Hidden by default) -->
+        <section id="transportation-section" class="transportation-section section-padding hidden">
+            <div class="container">
+                <h2 class="section-title text-center">Getting There</h2>
+                <div id="transportation-content" class="info-card text-center">
+                    <!-- Dynamic Content -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Accommodation (Hidden by default) -->
+        <section id="accommodation-section" class="accommodation-section section-padding hidden">
+            <div class="container">
+                <h2 class="section-title text-center">Accommodation</h2>
+                <div id="accommodation-content" class="info-card text-center">
+                    <!-- Dynamic Content -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Gifts Section -->
+        <section id="gifts-section" class="gifts-section section-padding">
+            <div class="container text-center">
+                <h2 class="section-title">A Gift From the Heart</h2>
+                <div class="gift-message-card">
+                    <p id="gift-message">Your love, blessings, and presence are the greatest gifts we could ever ask for.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section id="rsvp-section" class="rsvp-section section-padding">
+            <div class="container">
+                <div class="rsvp-card">
+                    <div class="section-header text-center">
+                        <h2 id="rsvp-heading">RSVP</h2>
+                        <p id="rsvp-subheading">We would love to celebrate this special moment with you.</p>
+                    </div>
+                    <form id="rsvp-form" class="rsvp-form">
+                        <div class="form-group">
+                            <label for="rsvp-name" id="label-name">Your Name</label>
+                            <input type="text" id="rsvp-name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label id="label-attendance">Will you be attending?</label>
+                            <div class="radio-group" id="rsvp-attendance-options">
+                                <!-- Dynamic Options -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="rsvp-message" id="label-message">Your Message</label>
+                            <textarea id="rsvp-message" name="message" rows="4" placeholder="Write your wishes..."></textarea>
+                        </div>
+                        <div class="form-submit text-center">
+                            <button type="submit" id="rsvp-submit" class="btn btn-primary">Send RSVP</button>
+                        </div>
+                        <div id="rsvp-status" class="rsvp-status hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer section-padding">
+            <div class="container text-center">
+                <div class="footer-names">Raju & Aishu</div>
+                <p class="footer-thank-you">Thank you for being part of our story.</p>
+                <div class="footer-divider"></div>
+                <div class="footer-credit">
+                    Website developed by <a href="https://digimaraa.com" target="_blank">Digimaraa Technologies</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Floating Controls -->
+    <div class="floating-controls">
+        <button id="music-toggle" class="control-btn music-btn hidden" aria-label="Toggle Music">
+            <span class="icon-music"></span>
+        </button>
+        <a href="#rsvp-section" class="control-btn rsvp-shortcut" aria-label="Go to RSVP">
+            <span class="icon-rsvp">RSVP</span>
+        </a>
+        <button id="back-to-top" class="control-btn back-to-top hidden" aria-label="Back to Top">
+            <span class="icon-up">↑</span>
+        </button>
+    </div>
+
+    <style>
+      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+      .scratch__burst { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 3; }
+      .dust { position: absolute; width: 6px; height: 6px; border-radius: 50%; opacity: 0; animation: dustBurst 1.4s var(--ease-out, ease-out) forwards; }
+      @keyframes dustBurst { 0% { transform: translate(0,0) scale(.2); opacity: 0; } 30% { opacity: 1; } 100% { transform: translate(var(--dx,0), var(--dy,0)) scale(1); opacity: 0; } }
+    </style>
+
+    <!-- Scripts -->
+    <script src="js/invitation-data.js"></script>
+    <script src="js/entrance.js"></script>
+    <script src="js/scratch.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/rsvp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
