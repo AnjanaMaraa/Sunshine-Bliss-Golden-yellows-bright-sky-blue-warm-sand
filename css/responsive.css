@@ -1,0 +1,108 @@
+/* 
+ * RAJU & AISHU - Wedding Invitation Responsive Styles
+ */
+
+@media (max-width: 1200px) {
+  :root {
+    --container-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --container-width: 700px;
+  }
+  
+  .hero-names {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-width: 100%;
+    --section-padding: 60px 15px;
+  }
+
+  .hero-names {
+    font-size: 4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .intro-names {
+    font-size: 3rem;
+  }
+
+  .countdown-timer {
+    gap: 10px;
+  }
+
+  .countdown-item {
+    min-width: 80px;
+    padding: 15px 10px;
+  }
+
+  .countdown-item .number {
+    font-size: 1.8rem;
+  }
+
+  /* Timeline Mobile */
+  .timeline-container::after {
+    left: 31px;
+  }
+
+  .timeline-event {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+    text-align: left !important;
+  }
+
+  .timeline-event::after {
+    left: 21px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .footer-names {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-names {
+    font-size: 3rem;
+  }
+
+  .tag-names {
+    font-size: 2.2rem;
+  }
+
+  .invitation-tag {
+    padding: 25px;
+    min-width: 90%;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .radio-option, .radio-label {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Touch Device Specifics */
+@media (hover: none) {
+  .btn:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
